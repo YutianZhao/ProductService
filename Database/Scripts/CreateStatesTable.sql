@@ -1,0 +1,22 @@
+IF NOT EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_SCHEMA = 'dbo' AND TABLE_NAME = 'States')
+BEGIN
+	CREATE TABLE [dbo].[States]
+	(
+		st_id INT IDENTITY(1, 1) NOT NULL,
+		st_coid INT NOT NULL,
+		st_stateName NVARCHAR(50) NOT NULL
+	)
+END
+GO
+IF OBJECT_ID('[dbo].[States]', 'PK') IS NULL
+BEGIN
+    ALTER TABLE [dbo].[States] 
+    ADD CONSTRAINT PK_STATES PRIMARY KEY CLUSTERED (st_id)
+END
+GO
+IF NOT EXISTS (SELECT 1 FROM sys.foreign_keys WHERE object_id = OBJECT_ID(N'[dbo].[FK_STATES_COUNTRIES]') AND parent_object_id = OBJECT_ID(N'[dbo].[States]'))
+BEGIN
+	ALTER TABLE [dbo].[States]
+	ADD CONSTRAINT FK_STATES_COUNTRIES FOREIGN KEY (st_coid) REFERENCES [dbo].[Countries] (co_id)
+END
+GO

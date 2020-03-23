@@ -1,0 +1,8 @@
+C:\Users\YutianZhao\source\repos\ProductService\ProductService.Repositories\bin\Debug\netstandard2.0\ProductService.Repositories.deps.json
+C:\Users\YutianZhao\source\repos\ProductService\ProductService.Repositories\bin\Debug\netstandard2.0\ProductService.Repositories.dll
+C:\Users\YutianZhao\source\repos\ProductService\ProductService.Repositories\bin\Debug\netstandard2.0\ProductService.Repositories.pdb
+C:\Users\YutianZhao\source\repos\ProductService\ProductService.Repositories\obj\Debug\netstandard2.0\ProductService.Repositories.AssemblyInfoInputs.cache
+C:\Users\YutianZhao\source\repos\ProductService\ProductService.Repositories\obj\Debug\netstandard2.0\ProductService.Repositories.AssemblyInfo.cs
+C:\Users\YutianZhao\source\repos\ProductService\ProductService.Repositories\obj\Debug\netstandard2.0\ProductService.Repositories.dll
+C:\Users\YutianZhao\source\repos\ProductService\ProductService.Repositories\obj\Debug\netstandard2.0\ProductService.Repositories.pdb
+C:\Users\YutianZhao\source\repos\ProductService\ProductService.Repositories\obj\Debug\netstandard2.0\ProductService.Repositories.csprojAssemblyReference.cache

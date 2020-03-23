@@ -1,0 +1,11 @@
+C:\Users\YutianZhao\source\repos\ProductService\ProductServices.Services\bin\Debug\netstandard2.0\ProductServices.Services.deps.json
+C:\Users\YutianZhao\source\repos\ProductService\ProductServices.Services\bin\Debug\netstandard2.0\ProductServices.Services.dll
+C:\Users\YutianZhao\source\repos\ProductService\ProductServices.Services\bin\Debug\netstandard2.0\ProductServices.Services.pdb
+C:\Users\YutianZhao\source\repos\ProductService\ProductServices.Services\bin\Debug\netstandard2.0\ProductService.Repositories.dll
+C:\Users\YutianZhao\source\repos\ProductService\ProductServices.Services\bin\Debug\netstandard2.0\ProductService.Repositories.pdb
+C:\Users\YutianZhao\source\repos\ProductService\ProductServices.Services\obj\Debug\netstandard2.0\ProductServices.Services.csprojAssemblyReference.cache
+C:\Users\YutianZhao\source\repos\ProductService\ProductServices.Services\obj\Debug\netstandard2.0\ProductServices.Services.AssemblyInfoInputs.cache
+C:\Users\YutianZhao\source\repos\ProductService\ProductServices.Services\obj\Debug\netstandard2.0\ProductServices.Services.AssemblyInfo.cs
+C:\Users\YutianZhao\source\repos\ProductService\ProductServices.Services\obj\Debug\netstandard2.0\ProductServices.Services.csproj.CopyComplete
+C:\Users\YutianZhao\source\repos\ProductService\ProductServices.Services\obj\Debug\netstandard2.0\ProductServices.Services.dll
+C:\Users\YutianZhao\source\repos\ProductService\ProductServices.Services\obj\Debug\netstandard2.0\ProductServices.Services.pdb
