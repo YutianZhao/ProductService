@@ -22,11 +22,12 @@ namespace ProductService.Controllers
         }
 
         // .../api/users/1
+        // Ok method will return a Json file. So no need Json serializer for now.
         [HttpGet]
         [Route("{id}")]
-        public async Task<IEnumerable<Users>> GetUsersById(int? id)
+        public async Task<ActionResult<IEnumerable<Users>>> GetUsersById(int? id)
         {
-            return await this._usersService.GetUsersByIdAsync(id);
+            return Ok(await this._usersService.GetUsersByIdAsync(id));
         }
     }
 }
