@@ -1,4 +1,4 @@
-IF NOT EXISTS (SELECT * FROM sys.objects WHERE type = 'P' AND OBJECT_ID = OBJECT_ID('[dbo].[usp_GetUsersById]'))
+IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE type = 'P' AND OBJECT_ID = OBJECT_ID('[dbo].[usp_GetUsersById]'))
 BEGIN
    EXEC('CREATE PROCEDURE [dbo].[usp_GetUsersById] AS BEGIN SET NOCOUNT ON; END')
 END
