@@ -29,5 +29,13 @@ namespace ProductService.Controllers
         {
             return Ok(await this._usersService.GetUsersByIdAsync(id));
         }
+
+        // .../api/users
+        // Will get all the users
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Users>>> GetUsers()
+        {
+            return Ok(await this._usersService.GetUsersByIdAsync(null));
+        }
     }
 }
