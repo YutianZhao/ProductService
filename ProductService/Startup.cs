@@ -1,22 +1,12 @@
 namespace ProductService
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Threading.Tasks;
-    using Dapper.FluentMap;
     using Microsoft.AspNetCore.Builder;
+    using Microsoft.AspNetCore.Cors.Infrastructure;
     using Microsoft.AspNetCore.Hosting;
-    using Microsoft.AspNetCore.HttpsPolicy;
-    using Microsoft.AspNetCore.Mvc;
     using Microsoft.Extensions.Configuration;
     using Microsoft.Extensions.DependencyInjection;
     using Microsoft.Extensions.Hosting;
-    using Microsoft.Extensions.Logging;
     using ProductService.Repositories;
-    using ProductService.Repositories.Repositories.Users;
-    using ProductService.Repositories.Repositories.Users.Interfaces;
-    using ProductService.Repositories.Users;
     using ProductServices.Services;
 
     public class Startup
@@ -35,11 +25,22 @@ namespace ProductService
             RepositoryDependencyModules.RepositoryDependencies(services);
             ServiceDependencyModules.ServiceDependencies(services);
             services.AddControllers();
+            services.AddCors();
+
+            // The Cors:
+            services.AddCors(options => options.AddPolicy("AllowAll", p => p.AllowAnyOrigin()
+                                                                        .AllowAnyMethod()
+                                                                        .AllowAnyHeader()));
+            //corsBuilder.WithOrigins("http://localhost:4200");
+            //corsBuilder.AllowCredentials();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            // Use the cors, may not required
+            app.UseCors("AllowAll");
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
