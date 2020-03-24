@@ -16,9 +16,9 @@ namespace ProductService.Repositories.Users
             Map(x => x.PhoneNumber).ToColumn("u_phoneNumber");
             Map(x => x.Address1).ToColumn("u_address1");
             Map(x => x.Address2).ToColumn("u_address2");
-            Map(x => x.CityId).ToColumn("u_ciid");
-            Map(x => x.StateId).ToColumn("u_stid");
-            Map(x => x.CountryId).ToColumn("u_coid");
+            Map(x => x.City).ToColumn("ci_cityName");
+            Map(x => x.State).ToColumn("st_stateName");
+            Map(x => x.Country).ToColumn("co_countryName");
             Map(x => x.Zip).ToColumn("u_zip");
             Map(x => x.UserName).ToColumn("u_userName");
             Map(x => x.CreateDate).ToColumn("u_createDate");
