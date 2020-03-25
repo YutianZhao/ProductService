@@ -9,12 +9,14 @@ import { UsersComponent } from './Components/users/users.component';
 import { ProductsComponent } from './Components/products/products.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import { TitlebarComponent } from './Components/titlebar/titlebar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
-    ProductsComponent
+    ProductsComponent,
+    TitlebarComponent
   ],
   imports: [
     BrowserModule,
