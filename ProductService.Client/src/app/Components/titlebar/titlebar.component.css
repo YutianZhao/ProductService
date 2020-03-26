@@ -1,0 +1,17 @@
+.titleBarSearch {
+    margin-left: 50px;
+    min-width: 300px;
+    max-width: 1000px;
+    width: 500px;
+}
+
+.searchBarInput {
+    padding: 4px 16px;
+    width: 100%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 2px solid #cccc;
+    font-size: 20px;
+    color: #606060;
+    font-weight: 500;
+}
