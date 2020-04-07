@@ -1,6 +1,23 @@
-<mat-toolbar color="primary">
-    <mat-toolbar-row>
-        <span>A Random Website</span>
-    </mat-toolbar-row>
-</mat-toolbar>
-
+<div class="navBar">
+    <mat-toolbar color="primary">
+        <mat-toolbar-row>
+            <div class="leftNavBar">
+                <span>Website</span>
+            </div>
+            <div class="midNavBar">
+                <span class="titleBarSearch">
+                    <input type="text" placeholder="Search..." class="searchBarInput">
+                    <button mat-flat-button class="searchButton"><mat-icon aria-hidden="false">search</mat-icon></button>
+                </span>
+            </div>
+            <div class="rightNavBar">
+                <span class="leftButtons">
+                    <button mat-button>Log In</button>
+                    <button mat-button>Orders & Return</button>
+                    <button mat-button>Your Cart</button>
+                    <button mat-button>Contact Service</button>
+                </span>
+            </div>
+        </mat-toolbar-row>
+    </mat-toolbar>
+</div>
