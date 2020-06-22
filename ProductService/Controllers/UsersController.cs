@@ -37,5 +37,10 @@ namespace ProductService.Controllers
         {
             return Ok(await this._usersService.GetUsersByIdAsync(null));
         }
+
+        public void Example()
+        {
+            int id = 2;
+        }
     }
 }
